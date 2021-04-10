@@ -13,5 +13,15 @@ class Dealer:
 
     def draw_card(self, card):
         self.cards.append(card)
+        self.hand_value += card.value
 
-    def hand(self):
+    def is_empty(self):
+        if self.cards is []:
+            return True
+        else:
+            return False
+
+    #Shows the hand of the dealer.
+    def __str__(self):
+        for card in self.cards:
+            print(card)

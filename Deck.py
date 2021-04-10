@@ -17,7 +17,7 @@ class Deck:
                 self.new_card = Cards(suit, rank)
                 self.deck.append(self.new_card)
 
-    def shuffle(self):
+    def shuffle_deck(self):
        shuffle(self.deck)
 
     def deal_card(self):
