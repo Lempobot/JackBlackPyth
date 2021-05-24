@@ -2,7 +2,7 @@
 
 #The player is a human.
 
-import Deck
+from Deck import Deck
 
 class Player:
     def __init__(self):
@@ -15,7 +15,7 @@ class Player:
         self.cards.append(card)
         self.hand_value += card.value
 
-        if card.rank is 'Ace':
+        if card.rank == 'Ace':
             self.aces += 1
 
     def change_ace(self):

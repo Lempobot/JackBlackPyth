@@ -1,6 +1,6 @@
 #Deck class.
 
-import Cards
+from Cards import Cards
 from random import shuffle
 
 suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')

@@ -4,7 +4,7 @@
 
 #Dealer deals the cards and plays along with the player.
 
-import Deck
+from Deck import Deck
 
 class Dealer:
     def __init__(self):
